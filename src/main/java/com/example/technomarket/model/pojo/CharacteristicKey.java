@@ -11,11 +11,11 @@ import java.io.Serializable;
 @Getter
 @Setter
 @Embeddable
-public class CartKey implements Serializable {
-
-    @Column(name = "user_id")
-    private long userId;
+public class CharacteristicKey implements Serializable {
 
     @Column(name = "product_id")
     private long productId;
+
+    @Column(name = "characteristic_id")
+    private long characteristicId;
 }

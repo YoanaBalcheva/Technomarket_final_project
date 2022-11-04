@@ -3,19 +3,15 @@ package com.example.technomarket.model.pojo;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.util.Set;
 
 @Data
 @Entity
-@Table(name = "categories")
-public class ProductCategory {
-
+@Table(name = "brands")
+public class Brand {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;
-
-    @OneToMany
-    private Set<SubCategory> subCategory;
+    @Column
+    private String brandName;
 }
